@@ -1,0 +1,14 @@
+
+<ul>
+    <?php foreach ($this->items as $item): ?>
+    <li<?php if ($item['class']): ?> class="<?php echo $item['class']; ?>"<?php endif; ?>><a href="<?php echo $item['href']; ?>" title="<?php echo $item['title']; ?>"<?php if ($item['class']): ?> class="<?php echo $item['class']; ?>"<?php endif; ?>><?php echo $item['link']; ?></a></li>
+    <?php endforeach; ?>
+</ul>
+
+
+
+<ul>
+    <?php foreach ($this->anchors as $anchor): ?>
+    <li><a href="<?php echo $anchor['href'];?>"><?php echo $anchor['title']; ?></a></li>
+    <?php endforeach; ?>
+</ul>
